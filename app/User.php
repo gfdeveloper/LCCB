@@ -55,6 +55,22 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
 		return $this->hasMany('App\Equipment');
 	}
 
+	public function scopeEmailList($query)
+	{
+		return $query->whereHas('roles', function ($q) {
+			$q->where('name', 'administrator');
+		})->orWhereHas('roles', function ($q) {
+			$q->where('name', 'approver');
+		});
+	}
+
+	public function scopeToolInstallLayoutEmails($query)
+	{
+		return $query->whereHas('organization', function($q){
+			$q->where('name', 'Tool Install - Layout');
+		})->select('email');
+	}
+
 	public function scopeHasApproved($query, $request_id)
 	{
 //		if($query->whereHas('approvals', function($q) use($request_id) {

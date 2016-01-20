@@ -1,5 +1,7 @@
 <?php
 
+use App\User;
+
 Route::get('/demo', 'LCCBController@dummy');
 
 Route::get('password/email', 'Auth\PasswordController@getEmail');
@@ -8,6 +10,14 @@ Route::post('password/email', 'Auth\PasswordController@postEmail');
 // Password reset routes...
 Route::get('password/reset/{token}', 'Auth\PasswordController@getReset');
 Route::post('password/reset', 'Auth\PasswordController@postReset');
+
+Route::get('test', function(){
+//	return User::with(['organization' => function($query){
+//		$query->where('name', 'Tool Install - Layout');
+//	}])->select('email')->get();
+
+	return User::toolInstallLayoutEmails()->get();
+});
 
 Route::group(['middleware' => 'auth'], function () {
 	Route::get('/', function () {

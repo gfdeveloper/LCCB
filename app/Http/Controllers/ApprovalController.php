@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 
 use App\Approval;
+use App\Events\ActionItemApproved;
 use App\Events\ApprovalWasSubmitted;
 
 use App\Events\FinalStatusSubmitted;
@@ -142,6 +143,7 @@ class ApprovalController extends Controller
 				'submitted_by' => Auth::User()->id
 			]);
 			Event::fire(new FinalStatusSubmitted($request));
+			Event::fire(new ActionItemApproved($request));
 		} elseif ($status['Approve'] == 1 && $status['Reject'] == 1) {
 			$request->status_id = 2;
 			$json['status'] = 'Open/Needs Further Review';
