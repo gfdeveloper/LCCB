@@ -1,0 +1,660 @@
+body {
+    padding-top: 70px;
+}
+
+.request-item {
+    padding: 1em;
+    margin: 12px 0;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.request-inside {
+    margin: 4px 0;
+}
+
+
+.modal.modal-wide .modal-dialog {
+    width: 50%;
+    overflow-y: auto;
+}
+
+.modal-wide .modal-body {
+    overflow-y: auto;
+}
+
+.twitter-typeahead {
+    width: 100%;
+}
+
+.tt-dropdown-menu {
+    width: 102%;
+    background: #FFFFFF;
+}
+
+input.typeahead.tt-query {
+    /* This is optional */
+    width: 300px !important;
+}
+
+.text-middle {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
+.spacer {
+    margin-top: 20px; /* define margin as you see fit */
+}
+
+.tt-query {
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+.tt-hint {
+    color: #999
+}
+
+.tt-menu {
+    width: 422px;
+    margin: 12px 0;
+    padding: 8px 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+}
+
+.tt-suggestion {
+    padding: 3px 20px;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.tt-suggestion:hover {
+    cursor: pointer;
+    color: #fff;
+    background-color: #0097cf;
+}
+
+.tt-suggestion.tt-cursor {
+    color: #fff;
+    background-color: #0097cf;
+
+}
+
+.tt-suggestion p {
+    margin: 0;
+}
+
+.gist {
+    font-size: 14px;
+}
+
+/* example specific styles */
+/* ----------------------- */
+
+#custom-templates .empty-message {
+    padding: 5px 10px;
+    text-align: center;
+}
+
+#multiple-datasets .league-name {
+    margin: 0 20px 5px 20px;
+    padding: 3px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+#scrollable-dropdown-menu .tt-menu {
+    max-height: 150px;
+    overflow-y: auto;
+    padding: 8px 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+#rtl-support .tt-menu {
+    text-align: right;
+}
+
+
+
+
+/***
+New Timeline
+***/
+/*--------------------------------------------------
+    [TRANSITION]
+----------------------------------------------------*/
+/* Cubic Bezier Transition */
+.timeline {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.timeline:before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 4px;
+    background: #f5f6fa;
+    top: 0px;
+    bottom: 0px;
+    margin-left: 38px;
+}
+
+.timeline-item {
+    margin: 0;
+    padding: 0;
+}
+
+.timeline-badge {
+    float: left;
+    position: relative;
+    padding-right: 30px;
+    height: 80px;
+    width: 80px;
+}
+
+.timeline-badge-userpic {
+    width: 80px;
+    border: 4px #f5f6fa solid;
+    -webkit-border-radius: 50% !important;
+    -moz-border-radius: 50% !important;
+    border-radius: 50% !important;
+}
+
+.timeline-badge-userpic img {
+    -webkit-border-radius: 50% !important;
+    -moz-border-radius: 50% !important;
+    border-radius: 50% !important;
+    vertical-align: middle !important;
+}
+
+.timeline-icon {
+    width: 80px;
+    height: 80px;
+    background-color: #f5f6fa;
+    -webkit-border-radius: 50% !important;
+    -moz-border-radius: 50% !important;
+    border-radius: 50% !important;
+    padding-top: 30px;
+    padding-left: 22px;
+}
+
+.timeline-icon i {
+    font-size: 34px;
+}
+
+.timeline-body {
+    position: relative;
+    padding: 20px;
+    margin-top: 20px;
+    /*margin-left: 110px;*/
+    background-color: #f5f6fa;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+}
+.timeline-body:before, .timeline-body:after {
+    content: " ";
+    display: table;
+}
+
+.timeline-title-label {
+    margin-left: 10px;
+}
+
+.timeline-body:after {
+    clear: both;
+}
+
+.timeline-body-arrow {
+    position: absolute;
+    top: 30px;
+    left: -14px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 14px 14px 14px 0;
+    border-color: transparent #f5f6fa transparent transparent;
+}
+
+.timeline-body-head {
+    margin-bottom: 10px;
+}
+
+.timeline-body-head-caption {
+    float: left;
+}
+
+.timeline-body-title {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.timeline-body-alerttitle {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.timeline-body-time {
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.timeline-body-head-actions {
+    float: right;
+}
+
+.timeline-body-head-actions .btn-group {
+    margin-top: -2px;
+}
+
+.timeline-body-content {
+    font-size: 14px;
+    margin-top: 35px;
+}
+
+.timeline-body-img {
+    width: 100px;
+    height: 100px;
+    margin: 5px 20px 0 0px;
+}
+
+.page-container-bg-solid .timeline:before {
+    background: #fff;
+}
+
+.page-container-bg-solid .timeline-badge-userpic {
+    border-color: #fff;
+}
+
+.page-container-bg-solid .timeline-icon {
+    background-color: #fff;
+}
+
+.page-container-bg-solid .timeline-body {
+    background-color: #fff;
+}
+
+.page-container-bg-solid .timeline-body-arrow {
+    border-color: transparent #fff transparent transparent;
+}
+
+@media (max-width: 768px) {
+    .timeline-body-head-caption {
+        width: 100%;
+    }
+
+    .timeline-body-head-actions {
+        float: left;
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 480px) {
+    .timeline:before {
+        margin-left: 28px;
+    }
+
+    .timeline-badge {
+        padding-right: 40px;
+        width: 60px;
+        height: 60px;
+    }
+
+    .timeline-badge-userpic {
+        width: 60px;
+    }
+
+    .timeline-icon {
+        width: 60px;
+        height: 60px;
+        padding-top: 23px;
+        padding-left: 18px;
+    }
+
+    .timeline-icon i {
+        font-size: 25px;
+    }
+
+    .timeline-body {
+        margin-left: 80px;
+    }
+
+    .timeline-body-arrow {
+        top: 17px;
+    }
+}
+
+
+/***
+Bootstrap Line Tabs by @keenthemes
+A component of Metronic Theme - #1 Selling Bootstrap 3 Admin Theme in Themeforest: http://j.mp/metronictheme
+Licensed under MIT
+***/
+
+.content {
+    padding: 30px;
+    background: #f1f3fa;
+}
+
+.margin-bottom-30 {
+    margin-bottom: 30px;
+}
+
+/* Portlet */
+.portlet {
+    background: #fff;
+    padding: 20px;
+}
+
+.portlet.portlet-gray {
+    background: #f7f7f7;
+}
+
+.portlet.portlet-bordered {
+    border: 1px solid #eee;
+}
+
+/* Portlet Title */
+.portlet-title {
+    padding: 0;
+    min-height: 40px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 18px;
+}
+
+.caption {
+    float: left;
+    display: inline-block;
+    font-size: 18px;
+    line-height: 18px;
+}
+
+.caption.caption-green .caption-subject,
+.caption.caption-green i {
+    color: #4db3a2;
+    font-weight: 200;
+}
+
+.caption.caption-red .caption-subject,
+.caption.caption-red i {
+    color: #e26a6a;
+    font-weight: 200;
+}
+
+.caption.caption-purple .caption-subject,
+.caption.caption-purple i {
+    color: #8775a7;
+    font-weight: 400;
+}
+
+.caption i {
+    color: #777;
+    font-size: 15px;
+    font-weight: 300;
+    margin-top: 3px;
+}
+
+.caption-subject {
+    color: #666;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.caption-helper {
+    padding: 0;
+    margin: 0;
+    line-height: 13px;
+    color: #9eacb4;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+/* Actions */
+.actions {
+    float: right;
+    display: inline-block;
+}
+
+.actions a {
+    margin-left: 3px;
+}
+
+.actions .btn {
+    color: #666;
+    padding: 3px 9px;
+    font-size: 13px;
+    line-height: 1.5;
+    background-color: #fff;
+    border-color: #ccc;
+    border-radius: 50px;
+}
+
+.actions .btn i {
+    font-size: 12px;
+}
+
+.actions .btn:hover {
+    background: #f2f2f2;
+}
+
+/* Pagination
+.pagination {
+    margin: -3px 0 0;
+    border-radius: 50px;
+}
+
+.pagination > li > a,
+.pagination > li > span {
+    padding: 4px 10px;
+    font-size: 12px;
+    color: #8775a7;
+    background: #f7f7f7;
+}
+
+.pagination > li:hover > a,
+.pagination > li.active > a,
+.pagination > li.active:hover > a {
+    color: #fff;
+    background: #8775a7;
+    border-color: #8775a7;
+}
+*/
+
+/* Inputs */
+.inputs {
+    float: right;
+    display: inline-block;
+    padding: 4px 0;
+    margin-top: -10px;
+}
+
+.input-inline {
+    width: 240px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* Tab */
+.portlet-title > .nav-tabs {
+    background: none;
+    margin: 0;
+    float: right;
+    display: inline-block;
+    border: 0;
+}
+
+.portlet-title > .nav-tabs > li {
+    background: none;
+    margin: 0;
+    border: 0;
+}
+
+.portlet-title > .nav-tabs > li > a {
+    background: none;
+    border: 0;
+    padding: 2px 10px 13px;
+    color: #444;
+}
+
+.portlet-title > .nav-tabs > li.active,
+.portlet-title > .nav-tabs > li.active:hover {
+    border-bottom: 4px solid #f3565d;
+    position: relative;
+}
+
+.portlet-title > .nav-tabs > li:hover {
+    border-bottom: 4px solid #f29b9f;
+}
+
+.portlet-title > .nav-tabs > li.active > a,
+.portlet-title > .nav-tabs > li:hover > a {
+    color: #333;
+    background: #fff;
+    border: 0;
+}
+
+/* Btn Circle */
+.actions .btn.btn-circle {
+    width: 28px;
+    height: 28px;
+    padding: 3px 7px;
+    text-align: center;
+}
+
+.actions .btn.btn-circle i {
+    font-size: 11px;
+}
+
+/* Btn Grey Salsa */
+.actions .btn.grey-salsa {
+    border: none;
+    margin-left: 3px;
+    box-shadow: none;
+    border-radius: 50px !important;
+}
+
+.actions .btn.grey-salsa.active {
+    color: #fafcfb;
+    background: #8e9bae;
+}
+.actions .grey-salsa.btn:hover,
+.actions .grey-salsa.btn:focus,
+.actions .grey-salsa.btn:active,
+.actions .grey-salsa.btn.active {
+    color: #fafcfb;
+    background: #97a3b4;
+}
+
+/* Btn Red */
+.actions .btn.btn-red.active,
+.actions .btn.btn-red:hover {
+    color: #fff;
+    box-shadow: none;
+    background: #e26a6a;
+    border-color: #e26a6a;
+}
+
+/* Btn Red */
+.actions .btn.btn-purple.active,
+.actions .btn.btn-purple:hover {
+    color: #fff;
+    box-shadow: none;
+    background: #8775a7;
+    border-color: #8775a7;
+}
+
+/***
+Bootstrap Daterangepicker
+***/
+.modal-open .daterangepicker {
+    z-index: 10055 !important;
+}
+
+.daterangepicker {
+    margin-top: 4px;
+}
+
+.daterangepicker td {
+    text-shadow: none;
+}
+
+.daterangepicker td.active {
+    background-color: #4b8df8;
+    background-image: none;
+    filter: none;
+}
+
+.daterangepicker th {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.daterangepicker .ranges input[type="text"] {
+    width: 70px !important;
+    font-size: 11px;
+    vertical-align: middle;
+}
+
+.daterangepicker .ranges label {
+    font-weight: 300;
+    display: block;
+}
+
+.daterangepicker .ranges {
+    width: 170px;
+}
+
+.daterangepicker .ranges ul > li.active {
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.daterangepicker .ranges .btn {
+    margin-top: 10px;
+}
+
+.daterangepicker.dropdown-menu {
+    padding: 5px;
+}
+
+.daterangepicker .ranges li {
+    color: #333;
+}
+
+.daterangepicker .ranges li.active,
+.daterangepicker .ranges li:hover {
+    background: #4b8df8 !important;
+    border: 1px solid #4b8df8 !important;
+    color: #fff;
+}
+
+.daterangepicker .range_inputs input {
+    margin-bottom: 0 !important;
+}
+
+.daterangepicker .fa-angle-right:before {
+    content: "\f105";
+}
+
+.daterangepicker .fa-angle-left:before {
+    content: "\f104";
+}
