@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Auth;
 
+use App\Organization;
 use App\Request;
 use App\User;
 use Illuminate\Support\Facades\Validator;
@@ -23,6 +24,8 @@ class AuthController extends Controller
 
     use AuthenticatesAndRegistersUsers;
 
+	protected $redirectPath = '/';
+
     /**
      * Create a new authentication controller instance.
      *
@@ -31,6 +34,12 @@ class AuthController extends Controller
     {
         $this->middleware('guest', ['except' => 'getLogout']);
     }
+
+	public function getRegister()
+	{
+		$data['orgs'] = Organization::get();
+		return view('auth.register',$data);
+	}
 
     /**
      * Get a validator for an incoming registration request.

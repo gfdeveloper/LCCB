@@ -37,6 +37,9 @@ class EventServiceProvider extends ServiceProvider
         'App\Events\ActionItemClosed' => [
             'App\Listeners\SendClosedActionItemEmail',
         ],
+	    'App\Events\ActionItemApproved' => [
+		    'App\Listeners\SendEmailToToolInstallLayoutOrg',
+	    ],
     ];
 
     /**
