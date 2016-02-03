@@ -137,7 +137,7 @@
     </script>
 
     <script id="actionItemsTemplate" type="text/x-handlebars-template">
-        <div class="row request-item">
+        <div class="row request-item" id="ai-@{{ a_id }}">
             <div class="col-xs-12">
                 <div class="row">
                     <div class="col-xs-3 request-inside">
@@ -150,7 +150,7 @@
                         <b>Due By</b><br>@{{ due_on }}
                     </div>
                     <div class="col-xs-3 request-inside">
-                        <b>Request</b><br><a class="btn btn-xs btn-default" href="/lccb/@{{ r_id }}/edit">View</a> <button disabled data-a_id="@{{ a_id }}" class="btn btn-xs btn-primary">Close</button>
+                        <b>Request</b><br><a class="btn btn-xs btn-default" href="/lccb/@{{ r_id }}/edit">View</a> <button data-a_id="@{{ a_id }}" class="btn btn-xs btn-primary close-ai">Close</button>
                     </div>
                 </div>
                 <div class="row">

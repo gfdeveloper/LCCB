@@ -45,32 +45,41 @@
                 message: '<h4>Loading</h4>'
             });
 
-            $.getJSON('/reports/minutes/get/'+ start + '/' + finish, function(context){
+            $.getJSON('/reports/minutes/get/' + start + '/' + finish, function (context) {
                 $('#newReport').html('');
-                $.each(context,function(index,element){
+                $.each(context, function (index, element) {
                     var html = newTemplate(element);
                     $('#newReport').append(html);
                 });
                 $('#newRequestBlock').unblock();
             });
 
-            $.getJSON('/reports/approvals/get/'+ start + '/' + finish, function(context){
+            $.getJSON('/reports/approvals/get/' + start + '/' + finish, function (context) {
                 $('#newApprovals').html('');
-                $.each(context,function(index,element){
+                $.each(context, function (index, element) {
                     var html = approvalsTemplate(element);
                     $('#newApprovals').append(html);
                 });
                 $('#newApprovalsBlock').unblock();
             });
 
-            $.getJSON('/reports/actions/get/'+ start + '/' + finish, function(context){
+            $.getJSON('/reports/actions/get/' + start + '/' + finish, function (context) {
                 $('#actionItems').html('');
-                $.each(context,function(index,element){
+                $.each(context, function (index, element) {
                     var html = actionsTemplate(element);
                     $('#actionItems').append(html);
                 });
                 $('#actionItemsBlock').unblock();
             });
         }
+
+        $('#actionItemsBlock').on('click', '.close-ai', function () {
+            $.ajax({
+                url: '/action/close/' + $(this).data('a_id'),
+                method: 'GET'
+            }).done(function (data) {
+                $('#ai-'+data.id).fadeOut();
+            })
+        })
     })
-}(jQuery)
+}(jQuery);
