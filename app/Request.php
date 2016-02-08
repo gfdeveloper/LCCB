@@ -36,8 +36,19 @@ class Request extends Model
         'alternatives',
         'requested_on',
 	    'submitted_by',
-	    'status_id'
+	    'status_id',
+	    'layout_updated',
+	    'design_updated',
+	    'mw_updated',
+	    'field_walk'
     ];
+
+	protected $casts = [
+		'layout_updated' => 'boolean',
+		'design_updated' => 'boolean',
+		'mw_updated' => 'boolean',
+		'field_walk' => 'boolean',
+	];
 
 	use SoftDeletes;
 

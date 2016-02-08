@@ -80,6 +80,19 @@
             }).done(function (data) {
                 $('#ai-'+data.id).fadeOut();
             })
-        })
+        });
+
+        $('#newReport').on('change', '[type=checkbox]', function(){
+            //alert($(this).data('id'));
+            var id = $(this).data('id');
+            var action = $(this).data('action');
+            var value = this.checked;
+            $.ajax({
+                url: '/api/request/' + id + '/' + action,
+                data: {
+                    status: value
+                }
+            })
+        });
     })
 }(jQuery);

@@ -36,30 +36,40 @@
                             @if($request->submitted_by == Auth::User()->id)
 
                             @else
-                                @if(!$hasApproved)
-                                    <button type="button" class="btn btn-success" id="approve-request" data-toggle="modal" data-target="#approver-modal" data-token="{{ csrf_token() }}">
-                                        Approve
-                                    </button>
-                                    <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#reject-modal" data-token="{{ csrf_token() }}" id="reject-request">Reject</button>
-                                    <div class="btn-group" role="group">
-                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                                            Set Status <span class="caret"></span>
-                                        </button>
-                                        <ul class="dropdown-menu" role="menu">
-                                            <li>
-                                                <a class="update-status" data-token="{{ csrf_token() }}" data-status="new" data-request_id="{!! $request->id !!}" href="#">New</a>
-                                            </li>
-                                            <li>
-                                                <a class="update-status" data-token="{{ csrf_token() }}" data-status="open-needs-further-review" data-request_id="{!! $request->id !!}" href="#">Needs Further Review</a>
-                                            </li>
-                                            <li><a class="delete-request" data-token="{{ csrf_token() }}" data-request_id="{!! $request->id !!}" href="#">Delete</a></li>
-                                        </ul>
+                                @if(!$request->field_walk)
                                     </div>
-
+                                    <a href="/request/{{ $request->id }}/field-walk" type="button" class="btn btn-success" id="field_walk">
+                                        Field Walk Has Been Verified to be Completed
+                                    </a>
+                                    <div class="btn-group" role="group">
                                 @else
-                                    <button type="button" class="btn btn-info" id="revoke-request" data-request_id="{!! $request->id !!}" data-token="{{ csrf_token() }}">
-                                        Revoke Approval
-                                    </button>
+                                    @if(!$hasApproved)
+                                        <button type="button" class="btn btn-success" id="approve-request" data-toggle="modal" data-target="#approver-modal" data-token="{{ csrf_token() }}">
+                                            Approve
+                                        </button>
+                                        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#reject-modal" data-token="{{ csrf_token() }}" id="reject-request">Reject</button>
+                                        <div class="btn-group" role="group">
+                                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                                Set Status <span class="caret"></span>
+                                            </button>
+                                            <ul class="dropdown-menu" role="menu">
+                                                <li>
+                                                    <a class="update-status" data-token="{{ csrf_token() }}" data-status="new" data-request_id="{!! $request->id !!}" href="#">New</a>
+                                                </li>
+                                                <li>
+                                                    <a class="update-status" data-token="{{ csrf_token() }}" data-status="open-needs-further-review" data-request_id="{!! $request->id !!}" href="#">Needs Further Review</a>
+                                                </li>
+                                                <li>
+                                                    <a class="delete-request" data-token="{{ csrf_token() }}" data-request_id="{!! $request->id !!}" href="#">Delete</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                    @else
+                                        <button type="button" class="btn btn-info" id="revoke-request" data-request_id="{!! $request->id !!}" data-token="{{ csrf_token() }}">
+                                            Revoke Approval
+                                        </button>
+                                    @endif
                                 @endif
 
                             @endif

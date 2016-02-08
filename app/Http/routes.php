@@ -36,6 +36,7 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::post('/lccb/revoke/{id}', 'ApprovalController@revoke');
 	Route::post('/lccb/attach/{id}', 'LCCBController@attach');
 	Route::post('/lccb/status/{id}/{status}', 'ApprovalController@setStatus');
+	Route::get('/request/{id}/field-walk', 'LCCBController@fieldWalk');
 
 	Route::resource('/lccb', 'LCCBController');
 	Route::resource('/comment', 'CommentsController');
@@ -75,8 +76,9 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::post('/action', 'CommentsController@addActionItem');
 	Route::get('/action/close/{id}', 'CommentsController@closeActionItem');
 
-
 	Route::get('/admin/vendors', 'VendorController@index');
+
+	Route::get('/api/request/{id}/{action}', 'UpdateController@update');
 
 	Route::get('/chris123', 'SneakController@updateStatues');
 });

@@ -90,7 +90,24 @@
                         <b>Status</b><br>@{{ status }}
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="checkbox">
+                            <label> <input data-id="@{{ id }}" data-action="layout_updated" @{{#if layout_updated}} checked @{{/if}} type="checkbox"> Layout Updated </label>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="checkbox">
+                            <label> <input data-id="@{{ id }}" data-action="design_updated" @{{#if design_updated}} checked @{{/if}} type="checkbox"> Design Updated </label>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="checkbox">
+                            <label> <input data-id="@{{ id }}" data-action="mw_updated" @{{#if mw_updated}} checked @{{/if}} type="checkbox"> M&W Updated </label>
+                        </div>
+                    </div>
 
+                </div>
                 <div class="row">
                     <div class="col-xs-12 request-inside">
                         <b>Description</b><br>@{{description}}
@@ -151,7 +168,8 @@
                         <b>Due By</b><br>@{{ due_on }}
                     </div>
                     <div class="col-xs-3 request-inside">
-                        <b>Request</b><br><a class="btn btn-xs btn-default" href="/lccb/@{{ r_id }}/edit">View</a> <button data-a_id="@{{ a_id }}" class="btn btn-xs btn-primary close-ai">Close</button>
+                        <b>Request</b><br><a class="btn btn-xs btn-default" href="/lccb/@{{ r_id }}/edit">View</a>
+                        <button data-a_id="@{{ a_id }}" class="btn btn-xs btn-primary close-ai">Close</button>
                     </div>
                 </div>
                 <div class="row">

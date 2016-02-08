@@ -26,7 +26,10 @@ class MeetingMinutes extends Controller
 				'e.name AS equipment',
 				'cat.name AS category',
 				'requests.requester_name AS requester',
-				'status.name AS status'
+				'status.name AS status',
+				'requests.layout_updated',
+				'requests.design_updated',
+				'requests.mw_updated'
 			])
 			->join('organizations AS o', 'o.id', '=', 'requests.organization_id')
 			->join('equipment AS e', 'e.id', '=', 'requests.equipment_id')

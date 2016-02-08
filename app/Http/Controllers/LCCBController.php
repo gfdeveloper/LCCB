@@ -1,11 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: app_ccarver
- * Date: 6/12/2015
- * Time: 12:08 PM
- */
-
 namespace App\Http\Controllers;
 
 
@@ -209,6 +202,18 @@ class LCCBController extends Controller
 		}
 
 		Request::destroy($id);
+	}
+
+	public function fieldWalk($id)
+	{
+		if(!Auth::User()->hasRole(['administrator', 'approver'])) {
+			return view('security.401');
+		}
+
+		Request::where('id', $id)->update(['field_walk' => 1]);
+
+		return redirect()->back();
+
 	}
 
 }
