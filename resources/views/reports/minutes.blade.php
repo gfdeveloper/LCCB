@@ -90,6 +90,7 @@
                         <b>Status</b><br>@{{ status }}
                     </div>
                 </div>
+
                 <div class="row">
                     <div class="col-xs-12 request-inside">
                         <b>Description</b><br>@{{description}}
