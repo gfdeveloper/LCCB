@@ -103,7 +103,7 @@
                     </div>
                     <div class="col-sm-4">
                         <div class="checkbox">
-                            <label> <input data-id="@{{ id }}" data-action="mw_updated" @{{#if mw_updated}} checked @{{/if}} type="checkbox"> M&W Updated </label>
+                            <label> <input data-id="@{{ id }}" data-action="mw_updated" @{{#if mw_updated}} checked @{{/if}} type="checkbox"> A&E Updated </label>
                         </div>
                     </div>
 

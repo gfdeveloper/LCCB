@@ -39,8 +39,11 @@
                                 @if(!$request->field_walk)
                                     </div>
                                     <a href="/request/{{ $request->id }}/field-walk" type="button" class="btn btn-success" id="field_walk">
-                                        Field Walk Has Been Verified to be Completed
+                                        Field Walk Has Been Verified
                                     </a>
+                        <a href="/request/{{ $request->id }}/field-walk" type="button" class="btn btn-warning" id="field_walk">
+                            Field Walk Not Required
+                        </a>
                                     <div class="btn-group" role="group">
                                 @else
                                     @if(!$hasApproved)
