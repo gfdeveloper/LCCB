@@ -89,6 +89,10 @@ class LCCBController extends Controller
 			return view('security.not-found');
 		}
 
+		if ($request->Status->name == 'Approved') {
+			return view('request.view', $data);
+		}
+
 		if ($request->submitted_by != Auth::User()->id && !Auth::User()->hasRole(['administrator', 'approver'])) {
 			return view('security.401');
 		}
@@ -101,9 +105,7 @@ class LCCBController extends Controller
 		$data['approvers'] = Approval::getRecent($id);
 		$data['hasApproved'] = Approval::hasApproved($id)->exists();
 
-		if ($request->Status->name == 'Approved') {
-			return view('request.view', $data);
-		}
+
 
 
 		return view('request.edit', $data);
