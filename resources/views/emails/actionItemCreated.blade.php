@@ -73,14 +73,14 @@
                     <tr>
                         <td>
                             <!-- padding -->
-                            <div style="height: 80px; line-height: 80px; font-size: 10px;">�</div>
+                            <div style="height: 80px; line-height: 80px; font-size: 10px;"></div>
                         </td>
                     </tr>
                     <!--header -->
                     <tr>
                         <td align="center" bgcolor="#ffffff">
                             <!-- padding -->
-                            <div style="height: 30px; line-height: 30px; font-size: 10px;">�</div>
+                            <div style="height: 30px; line-height: 30px; font-size: 10px;"></div>
                             <table width="90%" border="0" cellspacing="0" cellpadding="0">
                                 <tr>
                                     <td align="left"><!--
@@ -91,7 +91,7 @@
                                                 <tr>
                                                     <td align="left" valign="middle">
                                                         <!-- padding -->
-                                                        <div style="height: 20px; line-height: 20px; font-size: 10px;">�</div>
+                                                        <div style="height: 20px; line-height: 20px; font-size: 10px;"></div>
                                                         <table width="115" border="0" cellspacing="0" cellpadding="0">
                                                             <tr>
                                                                 <td align="left" valign="top" class="mob_center">
@@ -114,7 +114,7 @@
                                                 <tr>
                                                     <td align="right" valign="middle">
                                                         <!-- padding -->
-                                                        <div style="height: 20px; line-height: 20px; font-size: 10px;">�</div>
+                                                        <div style="height: 20px; line-height: 20px; font-size: 10px;"></div>
                                                         <table width="100%" border="0" cellspacing="0" cellpadding="0">
                                                             <tr>
                                                                 <td align="right">
@@ -134,7 +134,7 @@
                                 </tr>
                             </table>
                             <!-- padding -->
-                            <div style="height: 50px; line-height: 50px; font-size: 10px;">�</div>
+                            <div style="height: 50px; line-height: 50px; font-size: 10px;"></div>
                         </td>
                     </tr>
                     <!--header END-->
@@ -146,7 +146,7 @@
                                 <tr>
                                     <td align="center">
                                         <!-- padding -->
-                                        <div style="height: 60px; line-height: 60px; font-size: 10px;">�</div>
+                                        <div style="height: 60px; line-height: 60px; font-size: 10px;"></div>
                                         <div style="line-height: 44px;">
                                             <font face="Arial, Helvetica, sans-serif" size="5" color="#57697e" style="font-size: 34px;">
 					<span style="font-family: Arial, Helvetica, sans-serif; font-size: 34px; color: #57697e;">
@@ -154,7 +154,7 @@
 					</span></font>
                                         </div>
                                         <!-- padding -->
-                                        <div style="height: 40px; line-height: 40px; font-size: 10px;">�</div>
+                                        <div style="height: 40px; line-height: 40px; font-size: 10px;"></div>
                                     </td>
                                 </tr>
                                 <tr>
@@ -169,7 +169,7 @@
 					</span></font>
                                         </div>
                                         <!-- padding -->
-                                        <div style="height: 40px; line-height: 40px; font-size: 10px;">�</div>
+                                        <div style="height: 40px; line-height: 40px; font-size: 10px;"></div>
                                     </td>
                                 </tr>
                                 <tr>
@@ -181,7 +181,7 @@
                                                 </font></a>
                                         </div>
                                         <!-- padding -->
-                                        <div style="height: 60px; line-height: 60px; font-size: 10px;">�</div>
+                                        <div style="height: 60px; line-height: 60px; font-size: 10px;"></div>
                                     </td>
                                 </tr>
                             </table>
@@ -195,18 +195,18 @@
                     <tr>
                         <td class="iage_footer" align="center" bgcolor="#ffffff">
                             <!-- padding -->
-                            <div style="height: 80px; line-height: 80px; font-size: 10px;">�</div>
+                            <div style="height: 80px; line-height: 80px; font-size: 10px;"></div>
 
 
                             <!-- padding -->
-                            <div style="height: 30px; line-height: 30px; font-size: 10px;">�</div>
+                            <div style="height: 30px; line-height: 30px; font-size: 10px;"></div>
                         </td>
                     </tr>
                     <!--footer END-->
                     <tr>
                         <td>
                             <!-- padding -->
-                            <div style="height: 80px; line-height: 80px; font-size: 10px;">�</div>
+                            <div style="height: 80px; line-height: 80px; font-size: 10px;"></div>
                         </td>
                     </tr>
                 </table>
