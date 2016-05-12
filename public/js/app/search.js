@@ -21,7 +21,7 @@
                 {data: 'requested_on', name: 'requested_on'},
                 {data: 'requester', name: 'users.name'},
                 {data: 'equipment', name: 'equipment.name'},
-                {data: 'description', name: 'descrption'},
+                {data: 'description', name: 'description'},
                 {data: 'area', name: 'areas.name'},
                 {data: 'location', name: 'locations.name'},
                 {data: 'category', name: 'categories.name'},
