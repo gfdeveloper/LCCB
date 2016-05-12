@@ -7,10 +7,10 @@
                 <h3>
                     Search
                 </h3>
-                <table class="table" id="search">
+                <table class="table table-responsive" id="search">
                     <thead>
                     <tr>
-                        <th>
+                        <th width="5%">
                             ID
                         </th>
                         <th>
@@ -21,6 +21,9 @@
                         </th>
                         <th>
                             Equipment
+                        </th>
+                        <th>
+                            Description
                         </th>
                         <th>
                             Area
@@ -91,7 +94,7 @@
     <script src="https://cdn.datatables.net/buttons/1.0.0/js/buttons.flash.min.js"></script>
     -->
     <script src="/plugins/moment.min.js"></script>
-    <script src="/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
+    {{--<script src="/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>--}}
 
 
     <script type="text/javascript" src="https://cdn.datatables.net/r/bs/jszip-2.5.0,pdfmake-0.1.18,dt-1.10.8,b-1.0.0,b-flash-1.0.0,b-html5-1.0.0,b-print-1.0.0/datatables.min.js"></script>
@@ -104,6 +107,6 @@
     <link href="/css/dataTables.bootstrap.css" rel="stylesheet">
     <link href="https://cdn.datatables.net/buttons/1.0.0/css/buttons.bootstrap.min.css" rel="stylesheet">
     -->
-    <link href="/css/daterangepicker-bs3.css" rel="stylesheet">
+    {{--<link href="/css/daterangepicker-bs3.css" rel="stylesheet">--}}
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/r/bs/jszip-2.5.0,pdfmake-0.1.18,dt-1.10.8,b-1.0.0,b-flash-1.0.0,b-html5-1.0.0,b-print-1.0.0/datatables.min.css"/>
 @endsection
